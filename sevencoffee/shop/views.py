@@ -24,7 +24,7 @@ css = []
 
 
 for i in range(1, 101):
-    (hw, d, l) = (random.uniform(0, 2), random.uniform(0, 20), random.uniform(0,10))
+    (hw, d, l) = (random.uniform(0, 1), random.uniform(0, 20), random.uniform(2,10))
     css.append(csselement % (i, hw, hw, d, l))
 
 
