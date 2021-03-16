@@ -1,36 +1,76 @@
-@media only screen and (max-width: 576px) {
-    .carousel-caption {
-        h5 {
-            font-size: 1rem;
-        }
-    }
+
+
+
+.bgimg {
+  background-image: url("/static/shop/img/coffee.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 25px;
 }
 
-.carousel-caption {
-    position: relative;
-    left: 0;
-    top: 0;
+.col-lg-6 {
+  padding: 5% 5%;
+
+
+}
+
+
+p {
+  font-size:2vw;
+}
+h1, h5 {
+ font-size:5vw;
+}
+
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.container-fluid {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+
+}
+
+hr {
+  margin: auto;
+  width: 40%;
 }
 
 body, html {
   height: 100%;
-  font-family: "Inconsolata", sans-serif;
+  font-family:'Amatic SC', cursive;
+  background-color: #efefef;
 }
 
-.jumbotron {
-    background-color: #9FE2BF;
-    margin-bottom: 0;
+.carousel-caption {
+  opacity: 0.5;
+  background-color:#696969;
 }
 
 .carousel .item {
-  height: 400px;
+  height: 100vh;
+  width: 100vh;
+
 }
 
 .item img {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 600px;
+    min-height: 100vh;
+      -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .vertical-center {

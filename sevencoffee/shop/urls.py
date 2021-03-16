@@ -19,6 +19,5 @@ from django.urls import include, path
 from . import views
 
 urlpatterns = [
-    path('', views.Coming.as_view(), name='coming_soon')
-    # path('', views.Index.as_view(), name='base')
+    path('', views.Home.as_view(), name='home_new'),
 ]

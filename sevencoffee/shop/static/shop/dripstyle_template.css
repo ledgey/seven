@@ -1,0 +1,58 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.cont{
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow:hidden;
+  border-top:15px solid black;
+  border-bottom:15px solid black;
+
+  background-size: cover;
+  filter:url("#goo");
+  z-index: 1;
+
+
+}
+
+
+
+.cont .drip{
+  height:0px;
+  width:0px;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  background:black;
+  position:absolute;
+  top: -100%;
+  transform: rotate(-45deg);
+  animation:falling 10s linear infinite;
+}
+@keyframes falling{
+  0%{
+    top:-100%;
+  }
+  20%{
+    top:-90%;
+  }
+  50%{
+    top:0%;
+  }
+
+  100%{
+    top:100%;
+  }
+}
+
+
+#header {
+ border:15px solid black;
+
+}
+
+

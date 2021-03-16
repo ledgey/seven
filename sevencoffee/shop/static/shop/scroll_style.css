@@ -1,0 +1,112 @@
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  p {
+    font-size: 1.5vw;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 1.5px;
+  }
+}
+
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:'Cuprum', sans-serif;
+}
+
+.bgimg {
+  background-image: url("/static/shop/img/coffee.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 25px;
+}
+
+img {
+  max-height: inherit;
+  max-width: inherit;
+
+}
+
+.carousel-caption {
+  opacity: 0.5;
+  background-color:#696969;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.container-fluid {
+
+  max-height: inherit;
+  max-width: inherit;
+  background-size: cover;
+
+}
+
+
+
+
+
+
+.row {
+  padding:0;
+  margin:0;
+}
+
+.col-md-6 {
+  padding: 2% 2%;
+  margin: 0;
+
+
+}
+
+/* Other styles */
+section {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(1n) {
+  background-color: #9FE2BF;
+}
+
+
+section:nth-child(2n) {
+  background-color: #9FE2BF;
+}
+
+section:nth-child(3n) {
+  background-color: #9FE2BF;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
