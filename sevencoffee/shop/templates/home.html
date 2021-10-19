@@ -4,203 +4,329 @@
 <html>
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cuprum:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'shop/style2.css' %}">
-    <link rel="icon" href="{% static 'shop/img/favicon.png' %}" sizes="16x16">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Seven Coffee</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cuprum:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'shop/style2.css' %}">
+  <link rel="icon" href="{% static 'shop/img/favicon.png' %}" sizes="16x16">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Seven Coffee</title>
 
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <style>
 
+  p, li {
+    font-size:1.5vw;
 
-.cont{
-  width:100%;
-  height:100%;
-  position:relative;
-  overflow:hidden;
-  border-top:15px solid #4E2A2A;
-  border-bottom:30px solid rgb(234,141,22);
-
-  background-size: cover;
-  filter:url("#goo");
-
-
-
-}
-.cont .drip{
-  height:0px;
-  width:0px;
-  border-radius: 50%;
-  background: #4E2A2A;
-  position:absolute;
-  top: -100%;
-  animation:falling 20s linear infinite;
-}
-@keyframes falling{
-  0%{
-    top:-100%;
   }
 
-  10%{
-    top:-50
-  }
-  20%{
-    top:-25%;
-  }
-  50%{
-    top:0%;
+  ul {
+    list-style-type: none;
   }
 
-  100%{
-    top:100%;
+  body {
+
+    scroll-snap-type: mandatory;
+
   }
-}
+
+  .container-fluid {
+    min-height: 100vh;
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+
+  .textblob {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  .cont{
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    border-top:15px solid #4E2A2A;
+    border-bottom:30px solid rgb(234,141,22);
+
+    background-size: cover;
+    filter:url("#goo");
 
 
-#header {
- border:15px solid black;
 
-}
+  }
+  .carousel img {
+    height: 100vh;
+    width: 100vw;
+  }
+  .cont .drip{
+    height:0px;
+    width:0px;
+    border-radius: 50%;
+    background: #4E2A2A;
+    position:absolute;
+    top: -100%;
+    animation:falling 20s linear infinite;
+  }
+  @keyframes falling{
+    0%{
+      top:-100%;
+    }
 
-        {% for o in css_string_list %}
-            {{ o | safe}}
-        {% endfor %}
+    10%{
+      top:-50
+    }
+    20%{
+      top:-25%;
+    }
+    50%{
+      top:0%;
+    }
+
+    100%{
+      top:100%;
+    }
+  }
 
 
-    </style>
+  #header {
+    border:15px solid black;
+
+  }
+
+  {% for o in css_string_list %}
+  {{ o | safe}}
+  {% endfor %}
+
+
+  </style>
 </head>
 <body>
-<div class="icon-bar">
+  <div class="icon-bar">
     <a href="https://fb.me/sevencoffeebelfast" class="facebook"><i class="fa fa-facebook"></i></a>
     <a href="https://twitter.com/sevencoffeebel" class="twitter"><i class="fa fa-twitter"></i></a>
     <a href="https://instagram.com/seven_belfast/" class="instagram"><i class="fa fa-instagram"></i></a>
-</div>
-<div class="container-fluid" id="header">
-    <img class="img-fluid p-lg-3 p-1" src="{% static 'shop/img/seven_sign.svg' %}" alt="Seven Coffee">
+  </div>
+  <div class="container-fluid fill px-5">
+    <div class="row">
+      <div class="col">
+        <img class="img-fluid d-block my-auto mx-auto" src="{% static 'shop/img/sevenlogo.jpg' %}" alt="Seven Coffee">
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid fill bg-dark text-light pl-5">
+
+    <div class="row">
+
+      <div class="col-lg-6 my-5 p-5" data-aos="fade-right">
+        <p>Situated in West Belfast, Seven Coffee was founded in 2021 to bring high quality Barista style coffee, tea and food to serve the local community.  We grew up and lived in the area and have worked hard to bring the best to the west.</p>
+        <br>
+        <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+        <br>
+        <p>Check out our social media for up to date information and news</p>
+        <br>
+        <p><strong>Opening hours:</strong></p>
+        <ul>
+
+          <li>mon-wed: 8am to 4pm</li>
+          <li>thurs-fri: 8am to 6pm</li>
+          <li>sat-sun: 9am to 6pm</li>
+        </ul>
+        <br>
+        <p><strong>address:</strong> 7 Glen Road, Belfast BT11 8AE</p>
+        <p><strong>tel:</strong> 028 9508 0090
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <!--  -->
+        <img src="{% static 'shop/img/coffeefire.png' %}" class="img" style="height: 100vh; width: 100%;" >
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fill">
+
+    <div class="row">
+
+      <div class="col">
+        <div id="goodsCarousel" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#goodsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#goodsCarousel" data-slide-to="1"></li>
+            <li data-target="#goodsCarousel" data-slide-to="2"></li>
+            <li data-target="#goodsCarousel" data-slide-to="3"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'shop/img/sclub7.png' %}" class="d-block" alt="sclub7">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'shop/img/boh7.png' %}" class="d-block" alt="bagelo7">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'shop/img/chailatte.png' %}" class="d-block" alt="chailatte">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'shop/img/browniewide.png' %}" class="d-block" alt="brownie">
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#goodsCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#goodsCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fill">
+    <iframe src="{% static 'shop/img/menuseven.pdf' %}" class="d-block h-100 w-100"></iframe>
+  </div>
+
+
+  <div class="container-fluid fill" >
+
+    <div class="row slideanim">
+      <div class="col">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.1210224551623!2d-5.981681684175748!3d54.58424158896831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610628ed390701%3A0x4b046a58904807bb!2s7%20Glen%20Rd%2C%20Andersonstown%2C%20Belfast%20BT11%208BA!5e0!3m2!1sen!2suk!4v1612904078046!5m2!1sen!2suk" style="height:100vh;width:100%;"></iframe>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container-fluid" id="header">
+  <img class="img-fluid p-lg-3 p-1" src="{% static 'shop/img/seven_sign.svg' %}" alt="Seven Coffee">
 </div>
 
 <div class="cont">
-    {% for o in css_string_list %}
-    <div class="drip"></div>
-    {% endfor %}
+{% for o in css_string_list %}
+<div class="drip"></div>
+{% endfor %}
 
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-        </defs>
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<filter id="goo">
+<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+<feBlend in="SourceGraphic" in2="goo" />
+</filter>
+</defs>
+</svg>
 
-    <div class="container-fluid bg-dark text-light m-0 p-5">
+<div class="container-fluid bg-dark text-light m-0 p-5">
 
-        <h3 class="text-center">ABOUT</h3>
-        <div class="row">
+<h3 class="text-center">ABOUT</h3>
+<div class="row">
 
-            <div class="col-lg-6 text-blob" data-aos="fade-right">
+<div class="col-lg-6 text-blob" data-aos="fade-right">
 
-                <p>Situated in West Belfast, Seven Coffee was founded in 2021 to bring high quality Barista style coffee, tea and food to serve the local community.  We grew up and lived in the area and have worked hard to bring the best to the west.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-                <p>Check out our social media for up to date information and news</p>
-            </div>
-            <div class="col-lg-6 align-middle " >
-                <img src="{% static 'shop/img/sevensign.jpg' %}" class="img-fluid" data-aos="fade-left">
-                <p><strong>Opening hours:</strong> mon-fri from 8am to 4pm, sat-sun from 10am to 4pm.</p>
-                <p><strong>Address:</strong> 7 Glen Road, Belfast BT11 8AE</p>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Container (Services Section) -->
-    <div id="services" class="container-fluid text-center bg-light p-5" >
-
-        <h3 >SERVICES</h3>
-
-        <div class="row">
-            <div class="col-sm-4" data-aos="zoom-in-right">
-                <div class="thumbnail">
-                    <img src='{% static "shop/img/coffeecupseven.png" %}' class="img-responsive" alt="coffee">
-                    <h4>Coffee</h4>
-                    <p>Barista coffee, prepared thoughtfully with beans sourced from local suppliers</p>
-                </div>
-            </div>
-            <div class="col-sm-4" data-aos="zoom-in-up">
-                <div class="thumbnail">
-                    <img src='{% static "shop/img/bagelo7.jpg" %}' class="img-responsive" alt="sandwiches">
-                    <h4>Food</h4>
-                    <p>Freshly prepared sandwiches, wraps and other nice tasty snacks.  Using bread from local artisan bakers!</p>
-                </div>
-            </div>
-            <div class="col-sm-4" data-aos="zoom-in-left">
-                <div class="thumbnail">
-                    <img src='{% static "shop/img/cheescake.jpg" %}' class="img-responsive" alt="treats">
-                    <h4>Treats & things</h4>
-                    <p>Super treats freshly made every day</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container-fluid p-5 bg-dark text-light p-5 my-5" >
-
-        <h3 class="text-center">WHERE</h3>
-        <br>
-        <div class="row slideanim">
-            <div class="col px-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.1210224551623!2d-5.981681684175748!3d54.58424158896831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610628ed390701%3A0x4b046a58904807bb!2s7%20Glen%20Rd%2C%20Andersonstown%2C%20Belfast%20BT11%208BA!5e0!3m2!1sen!2suk!4v1612904078046!5m2!1sen!2suk" style="height:400px;width:100%;"></iframe>
-            <!--<div id="googleMap" style="height:400px;width:100%;"></div>-->
-            </div>
-        </div>
-        <div class="row p-5 slideanim">
-            <br>
-            <div class="col">
-
-                <p>Find us at 7 Glen Road, Belfast BT11 8AE</p>
-
-            </div>
-        </div>
-
-    </div>
-    <div class="container my-5 p-5"  id="contact" style="background-color: rgba(192,192,192, 0.5);">
-        <h3 class="text-center">CONTACT</h3>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdM_Bg1r50DPJUkTGOrH1V7hPiWRd_O8z47Otx1xNB5NBWK1Q/viewform?embedded=true" width="100%" height="840" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-    </div>
+<p>Situated in West Belfast, Seven Coffee was founded in 2021 to bring high quality Barista style coffee, tea and food to serve the local community.  We grew up and lived in the area and have worked hard to bring the best to the west.</p>
+<p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+<p>Check out our social media for up to date information and news</p>
+</div>
+<div class="col-lg-6 align-middle " >
+<img src="{% static 'shop/img/sevensign.jpg' %}" class="img-fluid" data-aos="fade-left">
+<div class="row">
+<div class="col">
+<p><strong>Opening hours:</strong></p>
+</div>
+<div class="col">
+<p>mon-wed  8am to 4pm</p><br>
+<p>thurs-fri  8am to 6pm</p><br>
+<p>sat-sun from 9am to 6pm</p><br>
+</div>
+<p><strong>Address:</strong> 7 Glen Road, Belfast BT11 8AE</p>
 
 </div>
+</div>
+</div>
+
+
+
+<div id="services" class="container-fluid text-center bg-light p-5" >
+
+<h3 >SERVICES</h3>
+
+<div class="row">
+<div class="col-sm-4" data-aos="zoom-in-right">
+<div class="thumbnail">
+<img src='{% static "shop/img/coffeecupseven.png" %}' class="img-responsive" alt="coffee">
+<h4>Coffee</h4>
+<p>Barista coffee, prepared thoughtfully with beans sourced from local suppliers</p>
+</div>
+</div>
+<div class="col-sm-4" data-aos="zoom-in-up">
+<div class="thumbnail">
+<img src='{% static "shop/img/bagelo7.jpg" %}' class="img-responsive" alt="sandwiches">
+<h4>Food</h4>
+<p>Freshly prepared sandwiches, wraps and other nice tasty snacks.  Using bread from local artisan bakers!</p>
+</div>
+</div>
+<div class="col-sm-4" data-aos="zoom-in-left">
+<div class="thumbnail">
+<img src='{% static "shop/img/cheescake.jpg" %}' class="img-responsive" alt="treats">
+<h4>Treats & things</h4>
+<p>Super treats freshly made every day</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid p-5 bg-dark text-light p-5 my-5" >
+
+<h3 class="text-center">WHERE</h3>
+<br>
+<div class="row slideanim">
+<div class="col px-5">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.1210224551623!2d-5.981681684175748!3d54.58424158896831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610628ed390701%3A0x4b046a58904807bb!2s7%20Glen%20Rd%2C%20Andersonstown%2C%20Belfast%20BT11%208BA!5e0!3m2!1sen!2suk!4v1612904078046!5m2!1sen!2suk" style="height:400px;width:100%;"></iframe>
+
+</div>
+</div>
+<div class="row p-5 slideanim">
+<br>
+<div class="col">
+
+<p>Find us at 7 Glen Road, Belfast BT11 8AE</p>
+
+</div>
+</div>
+
+</div>
+<div class="container my-5 p-5"  id="contact" style="background-color: rgba(192,192,192, 0.5);">
+<h3 class="text-center">CONTACT</h3>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdM_Bg1r50DPJUkTGOrH1V7hPiWRd_O8z47Otx1xNB5NBWK1Q/viewform?embedded=true" width="100%" height="840" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+</div>
+
+</div>
+-->
 <footer id="footer" class="w3-center w3-dark-grey w3-padding-48 w3-large">
 
 
-    <a href="https://fb.me/sevencoffeebelfast" ><i class="fa fa-facebook"></i></a>
-    <a href="https://twitter.com/sevencoffeebel" ><i class="fa fa-twitter"></i></a>
-    <a href="https://instagram.com/seven_belfast/" ><i class="fa fa-instagram"></i></a>
+  <a href="https://fb.me/sevencoffeebelfast" ><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/sevencoffeebel" ><i class="fa fa-twitter"></i></a>
+  <a href="https://instagram.com/seven_belfast/" ><i class="fa fa-instagram"></i></a>
 
 
 </footer>
@@ -210,7 +336,7 @@
 
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196708867-1">
 </script>
 <script>
@@ -231,9 +357,9 @@ $(document).ready(function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
 
     });
 
