@@ -26,9 +26,15 @@
   <title>Seven Coffee</title>
 
   <style>
+  h1 {
+    font-size: 62pt;
+  }
 
+  h2 {
+    font-size: 54pt;
+    }
   p, li {
-    font-size:1.5vw;
+    font-size:16pt;
 
   }
 
@@ -38,13 +44,11 @@
 
   body {
 
-    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
 
   }
 
   .container-fluid {
-    min-height: 100vh;
-    height: 100vh;
     scroll-snap-align: start;
   }
 
@@ -68,9 +72,23 @@
 
 
   }
+  .crop {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.crop carousel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
   .carousel img {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
   }
   .cont .drip{
     height:0px;
@@ -120,50 +138,59 @@
     <a href="https://twitter.com/sevencoffeebel" class="twitter"><i class="fa fa-twitter"></i></a>
     <a href="https://instagram.com/seven_belfast/" class="instagram"><i class="fa fa-instagram"></i></a>
   </div>
-  <div class="container-fluid fill px-5">
+  <div class="container-fluid ">
     <div class="row">
-      <div class="col">
-        <img class="img-fluid d-block my-auto mx-auto" src="{% static 'shop/img/sevenlogo.jpg' %}" alt="Seven Coffee">
+      <div class="col d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <!-- <img class="img-fluid d-block my-auto mx-auto" src="{% static 'shop/img/sevenlogo.jpg' %}" alt="Seven Coffee"> -->
+        <h1>Seven</h1>
+        <h2>Coffee</h2>
       </div>
 
     </div>
 
   </div>
 
-  <div class="container-fluid fill bg-dark text-light pl-5">
+  <div class="container-fluid bg-dark text-light">
 
     <div class="row">
 
-      <div class="col-lg-6 my-5 p-5" data-aos="fade-right">
-        <p>Situated in West Belfast, Seven Coffee was founded in 2021 to bring high quality Barista style coffee, tea and food to serve the local community.  We grew up and lived in the area and have worked hard to bring the best to the west.</p>
-        <br>
-        <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-        <br>
-        <p>Check out our social media for up to date information and news</p>
-        <br>
-        <p><strong>Opening hours:</strong></p>
-        <ul>
+        <div class="col-lg-6 p-5">
+          <p>Sipping freshly ground coffee while the world moves around you is a thing of beauty.  Serving you it is our duty!</p>
+          <br>
+          <p>Seven coffee aims to be that little retreat you make from the world to indulge yourself, for a moment in time where the only person that matters is you, your friends/family and even your dog</p>
+          <br>
+          <p>Check out our social media for up to date information and news</p>
+          <br>
 
-          <li>mon-wed: 8am to 4pm</li>
-          <li>thurs-fri: 8am to 6pm</li>
-          <li>sat-sun: 9am to 6pm</li>
-        </ul>
-        <br>
-        <p><strong>address:</strong> 7 Glen Road, Belfast BT11 8AE</p>
-        <p><strong>tel:</strong> 028 9508 0090
-      </div>
-      <div class="col-lg-6" data-aos="fade-left">
-        <!--  -->
-        <img src="{% static 'shop/img/coffeefire.png' %}" class="img" style="height: 100vh; width: 100%;" >
+          <p><strong>Opening hours:</strong></p>
+          <ul>
+
+            <li>mon-sun: 8am to 4pm</li>
+          </ul>
+          <br>
+          <p><strong>address:</strong> 7 Glen Road, Belfast BT11 8AE</p>
+          <p><strong>tel:</strong> 028 9508 0090</p>
+        </div>
+        <div class="col-lg-6 px-0">
+        <img src="{% static 'shop/img/coffeefire.png' %}" class="img d-flex mx-auto w-100 h-100" >
 
       </div>
     </div>
   </div>
-  <div class="container-fluid fill">
+  <div class="container-fluid">
+    <div class="row p-5">
+        <div class="col">
+          <p>You know you need to unwind sometimes, whether your working from home, just escaping the kids or taking your dog for a walk.  Seven is there for you, for us and your pups!</p>
+          <br>
+          <p>If your hungry, we'll sort you out. Our specials are simply that, "Special", design to meet whatever you are in the mood for that day.</p>
 
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid"
     <div class="row">
 
-      <div class="col">
+      <div class="col d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div id="goodsCarousel" class="carousel slide" data-ride="carousel">
           <ul class="carousel-indicators">
             <li data-target="#goodsCarousel" data-slide-to="0" class="active"></li>
@@ -173,16 +200,16 @@
           </ul>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="{% static 'shop/img/sclub7.png' %}" class="d-block" alt="sclub7">
+              <img src="{% static 'shop/img/sclub7.png' %}" class="min-vh-100" alt="sclub7">
             </div>
             <div class="carousel-item">
-              <img src="{% static 'shop/img/boh7.png' %}" class="d-block" alt="bagelo7">
+              <img src="{% static 'shop/img/boh7.png' %}" class="min-vh-100" alt="bagelo7">
             </div>
             <div class="carousel-item">
-              <img src="{% static 'shop/img/chailatte.png' %}" class="d-block" alt="chailatte">
+              <img src="{% static 'shop/img/chailatte.png' %}" class="min-vh-100" alt="chailatte">
             </div>
             <div class="carousel-item">
-              <img src="{% static 'shop/img/browniewide.png' %}" class="d-block" alt="brownie">
+              <img src="{% static 'shop/img/browniewide.png' %}" class="min-vh-100" alt="brownie">
             </div>
           </div>
         </div>
@@ -197,16 +224,18 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid fill">
-    <iframe src="{% static 'shop/img/menuseven.pdf' %}" class="d-block h-100 w-100"></iframe>
-  </div>
 
 
-  <div class="container-fluid fill" >
+  <div class="container-fluid " >
 
-    <div class="row slideanim">
+    <div class="row slideanim p-5">
       <div class="col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.1210224551623!2d-5.981681684175748!3d54.58424158896831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610628ed390701%3A0x4b046a58904807bb!2s7%20Glen%20Rd%2C%20Andersonstown%2C%20Belfast%20BT11%208BA!5e0!3m2!1sen!2suk!4v1612904078046!5m2!1sen!2suk" style="height:100vh;width:100%;"></iframe>
+        <p> We sit in a little corner of West Belfast, close to a park and other amenities, grab a coffee and go explore, or sit and watch the world go by. It's exactly what you want your way.
+        </div>
+      </div>
+      <div class="row slideanim p-5">
+    <div class="col d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.1210224551623!2d-5.981681684175748!3d54.58424158896831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610628ed390701%3A0x4b046a58904807bb!2s7%20Glen%20Rd%2C%20Andersonstown%2C%20Belfast%20BT11%208BA!5e0!3m2!1sen!2suk!4v1612904078046!5m2!1sen!2suk" class="h-100 w-100"></iframe>
 
       </div>
     </div>
