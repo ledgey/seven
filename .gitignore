@@ -4,3 +4,7 @@ venv/*
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+**/.idea/*
+db.sqlite3
+static/*
