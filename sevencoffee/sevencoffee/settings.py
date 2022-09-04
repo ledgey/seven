@@ -30,8 +30,7 @@ ALLOWED_HOSTS = ['*','seven-venv.eba-ue3crph3.us-west-2.elasticbeanstalk.com']
 
 # Application definition
 
-INSTALLED_APPS = ['order',
-                  'shop',
+INSTALLED_APPS = ['shop',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
