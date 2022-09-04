@@ -1,224 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ba3841c-95ea-4b12-80df-f5db1e6663b0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/.idea/libraries/R_User_Library.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/.idea/sevencoffee.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/db.sqlite3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/manage.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/requirements.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/sevencoffee/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/sevencoffee/asgi.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/sevencoffee/settings.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/sevencoffee/urls.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/sevencoffee/wsgi.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/admin.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/apps.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/migrations/0002_contact.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/migrations/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/models.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/appstyle.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/dripstyle_template.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/boh7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/browniewide.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/chailatte.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/coffeefire.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/favicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/fire.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/menuseven.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/sclub7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/sclub7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/sevenlogo.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/img/sevensign.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/scroll_style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/static/shop/style2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/templates/base.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/templates/coming.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/templates/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/templates/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/templates/menu.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/urls.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/shop/views.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/autocomplete.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/changelists.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/dashboard.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/forms.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/login.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/nav_sidebar.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/responsive.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/responsive_rtl.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/rtl.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/vendor/select2/select2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/vendor/select2/select2.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/css/widgets.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/fonts/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/fonts/README.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/README.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/calendar-icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/gis/move_vertex_off.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/gis/move_vertex_on.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-addlink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-alert.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-calendar.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-changelink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-clock.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-deletelink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-no.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-unknown-alt.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-unknown.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-viewlink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/icon-yes.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/inline-delete.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/search.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/selector-icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/sorting-icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/tooltag-add.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/img/tooltag-arrowright.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/SelectBox.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/SelectFilter2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/actions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/actions.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/admin/DateTimeShortcuts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/admin/RelatedObjectLookups.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/autocomplete.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/calendar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/cancel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/change_form.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/collapse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/collapse.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/core.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/inlines.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/inlines.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/jquery.init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/nav_sidebar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/popup_response.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/prepopulate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/prepopulate.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/prepopulate_init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/timeparse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/urlify.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/jquery/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/jquery/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/jquery/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/LICENSE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/af.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/az.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/bg.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/bn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/bs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ca.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/cs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/da.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/de.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/dsb.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/el.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/en.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/es.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/et.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/eu.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/fa.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/fi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/fr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/gl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/he.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/hi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/hr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/hsb.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/hu.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/hy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/id.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/is.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/it.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ja.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ka.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/km.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ko.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/lt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/lv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/mk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ms.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/nb.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ne.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/nl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/pl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ps.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/pt-BR.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/pt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ro.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/ru.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/sk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/sl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/sq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/sr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/sv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/th.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/tk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/tr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/uk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/vi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/zh-CN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/i18n/zh-TW.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/select2.full.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/select2/select2.full.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/xregexp/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/admin/js/vendor/xregexp/xregexp.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/appstyle.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/dripstyle.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/dripstyle_template.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/bagelo7.JPG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/bagels.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/bean_ground.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/boh7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/browniewide.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/chailatte.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/cheescake.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffee.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffeecup.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffeecup.jpg.sb-5be097f0-73Z6cl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffeecup.jpg.sb-5be097f0-qqoyJU" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffeecupseven.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffeefire.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffeeshop.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/coffeeshop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/drop.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/favicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/fire.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/location.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/menuseven.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/no7logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/sandwich.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/sandwich.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/sandwich_big.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/sclub7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/sclub7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/seven_sign.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/seven_sign.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/sevenlogo.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/sevensign.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/img/treats.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/scroll_style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sevencoffee/static/shop/style2.css" afterPath="" />
-    </list>
+    <list default="true" id="0ba3841c-95ea-4b12-80df-f5db1e6663b0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -261,8 +44,8 @@
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="-1137">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -404,14 +187,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="825" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5469613" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5469613" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -595,8 +377,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="-1137">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
