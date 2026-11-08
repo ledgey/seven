@@ -1,29 +1,73 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cuprum:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{% static 'shop/style2.css' %}">
-  <link rel="icon" href="{% static 'shop/img/favicon.png' %}" sizes="16x16">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <meta name="description" content="Your dog-friendly neighbourhood coffee shops in Belfast and Uphall, bringing together Irish and local suppliers. Good coffee, happy days.">
+  <meta name="theme-color" content="#006845">
+  <meta property="og:title" content="Seven Coffee — Belfast & Uphall">
+  <meta property="og:description" content="Your daily coffee. Your favourite catch-up. Find your Seven in Belfast and Uphall.">
+  <meta property="og:type" content="website">
+  <title>Seven Coffee — Belfast & Uphall</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'shop/img/seven-favicon.png' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'shop/brand.css' %}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Seven Coffee home"><img src="{% static 'shop/img/seven-green.webp' %}" width="720" height="401" alt="Seven Coffee"></a>
+    <nav aria-label="Main navigation"><a href="#our-coffee">Our coffee</a><a href="#locations">Find us</a><a class="nav-social" href="#socials">Our socials <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Belfast &amp; Uphall</p>
+        <h1 id="hero-title">Good coffee,<br>happy days.</h1>
+        <p class="intro">Your daily coffee. Your favourite catch-up.<br>A little time for yourself.</p>
+        <a class="button" href="#locations">Find your Seven <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">Two neighbourhoods. The same warm welcome.</p>
+      </div>
+      <div class="hero-photo"><img src="{% static 'shop/img/coffee_photO.png' %}" width="1400" height="927" alt="A cup of coffee topped with heart-shaped latte art" fetchpriority="high"><span class="photo-caption">Make time for a good cup.</span></div>
+    </section>
+    <div class="brand-strip" aria-hidden="true"><span>Good coffee</span><span>Good company</span><span>Happy days</span></div>
+    <section id="our-coffee" class="coffee-section" aria-labelledby="coffee-title">
+      <div class="pastry-photo"><img src="{% static 'shop/img/croissants.jpg' %}" width="1100" height="712" alt="Golden, flaky croissants" loading="lazy"></div>
+      <div class="section-copy"><p class="eyebrow">Your neighbourhood coffee shop</p><h2 id="coffee-title">Coffee first.<br>Stay a while.</h2><p>A little Irish heart, a proper local welcome. We bring together Irish and local suppliers to make Seven a coffee shop that feels at home in its neighbourhood.</p><p>We’re here for the morning regulars, the catch-ups with friends and the quiet moments to yourself. Whether you’re popping in on your way or settling in for a while, there’s a place for you at Seven.</p><p>Always dog friendly. Bring your four-legged company along — they’re part of the neighbourhood too.</p><a class="text-link" href="#locations">Come say hello <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section id="locations" class="locations" aria-labelledby="locations-title">
+      <div class="section-heading"><div><p class="eyebrow">Your local Seven</p><h2 id="locations-title">Find your happy place.</h2></div><p>From Belfast to West Lothian.<br>We’ll put the coffee on.</p></div>
+      <div class="location-grid">
+        <article class="location"><p class="eyebrow">01 / Glen Road</p><h3>Belfast</h3><address>7 Glen Road<br>Belfast, BT11 8AE</address><div class="hours"><h4>Opening hours</h4><p>Monday–Saturday <span>7.30am–3pm</span><br>Sunday <span>8.30am–3pm</span></p></div><a class="phone" href="tel:+442895080090">028 9508 0090</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Seven+Coffee+7+Glen+Road+Belfast">Directions to Belfast <span aria-hidden="true">↗</span></a></article>
+        <article class="location"><p class="eyebrow">02 / West Lothian</p><h3>Uphall</h3><address>27 West Main Street<br>Uphall, EH52 5ND</address><div class="hours"><h4>Opening hours</h4><p>Monday–Saturday <span>7.30am–3pm</span><br>Sunday <span>8.30am–3pm</span></p></div><p class="location-note">Find us on West Main Street.</p><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=27+West+Main+Street+Uphall+EH52+5ND">Directions to Uphall <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+    <section id="socials" class="social-section" aria-labelledby="social-title">
+      <p class="eyebrow">A little more Seven</p>
+      <h2 id="social-title">Keep in good company.</h2>
+      <p>Follow your local Seven for news from the shop and a little everyday coffee inspiration.</p>
+      <div class="social-grid">
+        <div class="social-location">
+          <h3>Belfast</h3>
+          <div class="social-links">
+            <a href="https://www.instagram.com/seven_belfast/" aria-label="Seven Coffee Belfast on Instagram">Instagram <span aria-hidden="true">↗</span></a>
+            <a href="https://www.facebook.com/sevencoffeebelfast" aria-label="Seven Coffee Belfast on Facebook">Facebook <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="social-location">
+          <h3>Uphall · West Lothian</h3>
+          <div class="social-links">
+            <a href="https://www.instagram.com/seven_coffee_west_lothian/" aria-label="Seven Coffee West Lothian on Instagram">Instagram <span aria-hidden="true">↗</span></a>
+            <a href="https://www.facebook.com/sevencoffeewestlothian" aria-label="Seven Coffee West Lothian on Facebook">Facebook <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#" aria-label="Seven Coffee, back to top"><img src="{% static 'shop/img/seven-cream.webp' %}" width="720" height="401" alt="Seven Coffee" loading="lazy"></a><p>Good coffee, happy days.</p><p class="copyright">© {% now "Y" %} Seven Coffee · Belfast &amp; Uphall</p></footer>
     <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -37,246 +81,10 @@
   fbq('init', '482311976932716');
   fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
+  <noscript><img alt="" height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=482311976932716&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
-  <title>Seven Coffee</title>
-
-  <style>
-  h1 {
-    font-size: 62pt;
-  }
-
-  h2 {
-    font-size: 54pt;
-    }
-  p, li {
-    font-size:16pt;
-
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  body {
-
-    scroll-snap-type: y mandatory;
-
-  }
-
-  .container-fluid {
-    scroll-snap-align: start;
-  }
-
-  .textblob {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-  }
-
-  .cont{
-    width:100%;
-    height:100%;
-    position:relative;
-    overflow:hidden;
-    border-top:15px solid #4E2A2A;
-    border-bottom:30px solid rgb(234,141,22);
-
-    background-size: cover;
-    filter:url("#goo");
-
-
-
-  }
-  .crop {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-}
-.crop carousel {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-}
-  .carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-  }
-  .cont .drip{
-    height:0px;
-    width:0px;
-    border-radius: 50%;
-    background: #4E2A2A;
-    position:absolute;
-    top: -100%;
-    animation:falling 20s linear infinite;
-  }
-  @keyframes falling{
-    0%{
-      top:-100%;
-    }
-
-    10%{
-      top:-50
-    }
-    20%{
-      top:-25%;
-    }
-    50%{
-      top:0%;
-    }
-
-    100%{
-      top:100%;
-    }
-  }
-
-
-  #header {
-    border:15px solid black;
-
-  }
-
-  {% for o in css_string_list %}
-  {{ o | safe}}
-  {% endfor %}
-
-
-  </style>
-</head>
-<body>
-  <div class="icon-bar">
-    <a href="https://fb.me/sevencoffeebelfast" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="https://twitter.com/sevencoffeebel" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="https://instagram.com/seven_belfast/" class="instagram"><i class="fa fa-instagram"></i></a>
-  </div>
-  <div class="container-fluid ">
-    <div class="row">
-      <div class="col d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <!-- <img class="img-fluid d-block my-auto mx-auto" src="{% static 'shop/img/sevenlogo.jpg' %}" alt="Seven Coffee"> -->
-        <h1>Seven</h1>
-        <h2>Coffee</h2>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="container-fluid bg-dark text-light">
-
-    <div class="row">
-
-        <div class="col-lg-6 p-5">
-          <p>Sipping freshly ground coffee while the world moves around you is a thing of beauty.  Serving you it is our duty!</p>
-          <br>
-          <p>Seven coffee aims to be that little retreat you make from the world to indulge yourself, for a moment in time where the only person that matters is you, your friends/family and even your dog</p>
-          <br>
-          <p>Check out our social media for up to date information and news</p>
-          <br>
-
-          <p><strong>Opening hours:</strong></p>
-          <ul>
-
-            <li>mon-sat: 7.30am to 3pm</li>
-            <li>sun: 8.30am to 3pm</li>
-            
-          </ul>
-          <br>
-          <p><strong>address:</strong> 7 Glen Road, Belfast BT11 8AE</p>
-          <p><strong>tel:</strong> 028 9508 0090</p>
-        </div>
-        <div class="col-lg-6 px-0">
-        <img src="{% static 'shop/img/coffeefire.png' %}" class="img d-flex mx-auto w-100 h-100" >
-
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row p-5">
-        <div class="col">
-          <p>You know you need to unwind sometimes, whether your working from home, just escaping the kids or taking your dog for a walk.  Seven is there for you, for us and your pups!</p>
-          <br>
-          <p>If your hungry, we'll sort you out. Our specials are simply that, "Special", design to meet whatever you are in the mood for that day.</p>
-
-        </div>
-    </div>
-  </div>
-  <div class="container-fluid"
-    <div class="row">
-
-      <div class="col d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <div id="goodsCarousel" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#goodsCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#goodsCarousel" data-slide-to="1"></li>
-            <li data-target="#goodsCarousel" data-slide-to="2"></li>
-            <li data-target="#goodsCarousel" data-slide-to="3"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="{% static 'shop/img/sclub7.png' %}" class="min-vh-100" alt="sclub7">
-            </div>
-            <div class="carousel-item">
-              <img src="{% static 'shop/img/boh7.png' %}" class="min-vh-100" alt="bagelo7">
-            </div>
-            <div class="carousel-item">
-              <img src="{% static 'shop/img/chailatte.png' %}" class="min-vh-100" alt="chailatte">
-            </div>
-            <div class="carousel-item">
-              <img src="{% static 'shop/img/browniewide.png' %}" class="min-vh-100" alt="brownie">
-            </div>
-          </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#goodsCarousel" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#goodsCarousel" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container-fluid " >
-
-    <div class="row slideanim p-5">
-      <div class="col">
-        <p> We sit in a little corner of West Belfast, close to a park and other amenities, grab a coffee and go explore, or sit and watch the world go by. It's exactly what you want your way.
-        </div>
-      </div>
-      <div class="row slideanim p-5">
-    <div class="col d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.1210224551623!2d-5.981681684175748!3d54.58424158896831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610628ed390701%3A0x4b046a58904807bb!2s7%20Glen%20Rd%2C%20Andersonstown%2C%20Belfast%20BT11%208BA!5e0!3m2!1sen!2suk!4v1612904078046!5m2!1sen!2suk" class="h-100 w-100"></iframe>
-
-      </div>
-    </div>
-  </div>
-
-<footer id="footer" class="w3-center w3-dark-grey w3-padding-48 w3-large">
-
-
-  <a href="https://fb.me/sevencoffeebelfast" ><i class="fa fa-facebook"></i></a>
-  <a href="https://twitter.com/sevencoffeebel" ><i class="fa fa-twitter"></i></a>
-  <a href="https://instagram.com/seven_belfast/" ><i class="fa fa-instagram"></i></a>
-
-
-</footer>
-
-
-
-
-
-
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196708867-1">
 </script>
 <script>
@@ -285,31 +93,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-196708867-1');
-</script>
-
-<script>
-AOS.init()
-
-$(document).ready(function(){
-
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("slide");
-      }
-
-    });
-
-    $('.bg').scroll(function() {
-      var x = $(this).scrollTop();
-      $(this).css('background-position', '0% ' + parseInt(-x / 10) + 'px');
-    });
-  });
-})
-
 </script>
 </body>
 </html>
