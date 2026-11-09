@@ -1,0 +1,13 @@
+# Replace example.com with your real domain. Keep existing unrelated site blocks.
+example.com {
+    root * /srv/seven/current
+    encode zstd gzip
+    file_server
+    header X-Content-Type-Options nosniff
+    header Referrer-Policy strict-origin-when-cross-origin
+}
+
+# OPTIONAL: enable only after www DNS points to this server too.
+# www.example.com {
+#     redir https://example.com{uri} permanent
+# }
