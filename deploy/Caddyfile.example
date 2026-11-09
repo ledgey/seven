@@ -1,5 +1,6 @@
-# Replace example.com with your real domain. Keep existing unrelated site blocks.
-example.com {
+# All six hostnames must point to this Linode before enabling this configuration.
+# Preserve any unrelated site blocks already on the server.
+seven-coffee.com {
     root * /srv/seven/current
     encode zstd gzip
     file_server
@@ -7,7 +8,6 @@ example.com {
     header Referrer-Policy strict-origin-when-cross-origin
 }
 
-# OPTIONAL: enable only after www DNS points to this server too.
-# www.example.com {
-#     redir https://example.com{uri} permanent
-# }
+www.seven-coffee.com, seven-belfast.co.uk, www.seven-belfast.co.uk, sevencoffee.co.uk, www.sevencoffee.co.uk {
+    redir https://seven-coffee.com{uri} permanent
+}
