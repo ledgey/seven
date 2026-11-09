@@ -53,7 +53,7 @@ Existing Google Fonts and analytics snippets are preserved. Font loading and ana
 
 Build on your Mac and upload **only the contents of `dist/`**. The server does not need Node or npm. Caddy serves the files, redirects HTTP to HTTPS, and obtains/renews certificates when DNS and network access are correct.
 
-The commands below assume **Ubuntu 24.04 LTS**, SSH access, and a user called `deploy` with sudo access. Replace `SERVER_IP` and `example.com` with your own values. They are placeholders, not your actual server/domain. No server reset or deployment is performed by this repository.
+The commands below assume **Ubuntu 24.04 LTS**, SSH access, and a user called `deploy` with sudo access. Replace `SERVER_IP` with your Linode IP address. The configuration uses your actual domains, with `https://seven-coffee.com` as the canonical address. No server reset or deployment is performed by this repository.
 
 ### Existing server versus a fresh server
 
@@ -143,21 +143,33 @@ Record the old `current` target printed by `readlink` for rollback. The final re
 
 ### DNS and HTTPS
 
-At your DNS provider:
+The canonical website is **https://seven-coffee.com**. The other five hostnames redirect permanently to it, preserving the path and query string. HTTP requests are upgraded to HTTPS automatically. Domain names are case-insensitive, so `SevenCoffee.co.uk` and `sevencoffee.co.uk` behave identically.
 
-- Set the root domain's **A record** to the Linode IPv4 address.
-- If using `www`, point its A record at the same IP, or use a CNAME to the root domain.
-- Only publish an **AAAA record** if IPv6 reaches this server and the firewall permits it; remove stale AAAA records.
-- Keep mail/MX and unrelated DNS records unchanged. If using a DNS proxy, initially use DNS-only mode to test direct access. Restrictive CAA records must permit Caddy's certificate issuer.
+Configure these records at the authoritative DNS provider for **each** domain:
 
-On the server, edit the copied configuration and replace `example.com` with your domain:
+| DNS zone | Name | Type | Value |
+| --- | --- | --- | --- |
+| seven-coffee.com | @ | A | Your Linode IPv4 address |
+| seven-coffee.com | www | CNAME | seven-coffee.com |
+| seven-belfast.co.uk | @ | A | Your Linode IPv4 address |
+| seven-belfast.co.uk | www | CNAME | seven-coffee.com |
+| sevencoffee.co.uk | @ | A | Your Linode IPv4 address |
+| sevencoffee.co.uk | www | CNAME | seven-coffee.com |
+
+Some DNS providers use a blank name instead of `@`. A CNAME cannot coexist with other records at the same name: replace conflicting `www` records, rather than adding duplicates. Do not use a standard CNAME at the root domain. DNS directs requests to the server; **Caddy performs the address-bar redirect**, so DNS records alone are not sufficient.
+
+Only retain AAAA records if IPv6 reaches this same server and the firewall allows it. Remove stale AAAA records on all six hostnames. Keep mail/MX and unrelated records unchanged. If using a DNS proxy, initially use DNS-only mode to test direct access. Restrictive CAA records must permit Caddy's certificate issuer. Disable any old registrar URL-forwarding service for these hostnames once using this setup.
+
+All six hostnames need valid HTTPS certificates, including those that only redirect. Caddy obtains and renews these automatically once their DNS resolves to the Linode and public TCP 80/443 reaches Caddy. Do not enable this configuration until all six names are ready; otherwise certificate issuance for unconfigured names will fail.
+
+On the server, review the supplied configuration (the domain names are already filled in) and back up your existing file:
 
 ```bash
 nano /home/deploy/seven-Caddyfile.example
 sudo cp -a /etc/caddy/Caddyfile /etc/caddy/Caddyfile.before-seven
 ```
 
-On a fresh, dedicated server, install the edited file:
+On a fresh, dedicated server, install the file:
 
 ```bash
 sudo install -m 644 /home/deploy/seven-Caddyfile.example /etc/caddy/Caddyfile
@@ -166,22 +178,29 @@ sudo systemctl enable --now caddy
 sudo systemctl reload caddy
 ```
 
-On a shared/existing Caddy server, instead add the site block to its existing Caddyfile and preserve unrelated blocks. Avoid duplicate blocks for the same domain. Uncomment the `www` redirect only once its DNS is ready. Run the validation and reload commands after editing; **do not reload if validation fails**. The commented `www` block redirects to the root domain over HTTPS.
+On a shared/existing Caddy server, add both supplied site blocks to its existing Caddyfile and preserve unrelated blocks. Avoid duplicate blocks for the same domain. Run validation after editing and **do not reload if validation fails**.
 
-Caddy requests certificates automatically; you do not run Certbot or provide a certificate file. DNS must resolve correctly and public TCP 80/443 must reach Caddy. No public access to ports 5173 or 4173 is needed.
+No Certbot commands or manual certificate files are required. No public access to ports 5173 or 4173 is needed.
 
 ### Verify deployment
 
-From your Mac, replacing `example.com`:
+From your Mac:
 
 ```bash
-curl -I http://example.com
-curl -I https://example.com
-curl -I https://example.com/images/seven-green.webp
-curl -I https://example.com/not-a-real-page
+curl -I http://seven-coffee.com
+curl -I https://seven-coffee.com
+curl -I https://seven-coffee.com/images/seven-green.webp
+curl -I https://seven-coffee.com/not-a-real-page
+
+for domain in www.seven-coffee.com seven-belfast.co.uk www.seven-belfast.co.uk sevencoffee.co.uk www.sevencoffee.co.uk; do
+  curl -I "https://$domain/?source=redirect-test"
+  curl -IL "http://$domain/?source=redirect-test"
+done
 ```
 
-Expect an HTTP-to-HTTPS redirect, then 200 for the home page and logo, and 404 for the missing page. Open the HTTPS site in a browser and test navigation, mobile layout and both shops' links. Test `www` too if configured. A certificate for a domain is not a certificate for its raw IP address.
+Expect an HTTP-to-HTTPS redirect, 200 for the canonical homepage and logo, and 404 for the missing page. Each alternate HTTPS hostname should return 301 with `Location: https://seven-coffee.com/?source=redirect-test`; the HTTP chain should ultimately end at that same address. The target homepage should return 200. Unknown paths remain unchanged by the redirect and can still return 404 on the main site.
+
+Open all six addresses in a browser to confirm HTTPS and the final address bar. Also test navigation, mobile layout and both shops' links. A certificate for a domain is not a certificate for its raw IP address.
 
 For diagnostics on the server:
 
