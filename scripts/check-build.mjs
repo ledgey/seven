@@ -15,7 +15,7 @@ for (const [, attribute, value] of html.matchAll(/\b(src|href)="([^"]+)"/g)) {
 assert(html.includes('27 West Main Street') && html.includes('EH52 5ND'));
 assert.equal((html.match(/7\.30am–3pm/g) || []).length, 2);
 assert.equal((html.match(/8\.30am–3pm/g) || []).length, 2);
-for (const profile of ['seven_belfast/', 'sevencoffeebelfast', 'seven_coffee_west_lothian/', 'sevencoffeewestlothian']) {
+for (const profile of ['seven_belfast/', 'sevencoffeebelfast', 'seven_coffee_west_lothian/', 'facebook.com/share/1C6fYDwUPn/']) {
   assert(html.includes(profile), `Missing social profile ${profile}`);
 }
 assert(html.includes('Always dog friendly.'));
