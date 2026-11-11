@@ -12,7 +12,7 @@ for (const [, attribute, value] of html.matchAll(/\b(src|href)="([^"]+)"/g)) {
     await access(resolve('dist', value.slice(1).split('?')[0]));
   }
 }
-assert(html.includes('27 West Main Street') && html.includes('EH52 5ND'));
+assert(html.includes('27 West Main Street') && html.includes('EH52 5DN'));
 assert.equal((html.match(/7\.30am–3pm/g) || []).length, 2);
 assert.equal((html.match(/8\.30am–3pm/g) || []).length, 2);
 for (const profile of ['seven_belfast/', 'sevencoffeebelfast', 'seven_coffee_west_lothian/', 'facebook.com/share/1C6fYDwUPn/']) {
